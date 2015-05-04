@@ -129,21 +129,6 @@ h1 {
 
 /* === Header === */
 
-#blog-logo {
-    display: block;
-    max-width: 100px;
-    margin: 50px auto 0;
-    text-align: center;
-    div.bloglogo {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      background-size: cover !important;
-      background-position: center center !important;
-      background-color: @bodyBackgroundColor;
-    }
-}
-
 .blog-title, .blog-description {
     text-align: center
 }
@@ -349,6 +334,22 @@ footer {
     background: none;
     border-top: 1px solid @borderColor;
     margin-top: 1em;
+}
+
+.blog-logo {
+    display: block;
+    max-width: 100px;
+    margin: 50px auto 0;
+    text-align: center;
+
+    .logo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-size: cover;
+      background-position: center center;
+      background-color: @bodyBackgroundColor;
+    }
 }
 
 /* === Navigation and Pagination === */
