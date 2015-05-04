@@ -1,13 +1,16 @@
 // Variables
 
 @bodyBackgroundColor: #ffffff;
+
 @baseFontFamily: "Merriweather", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
 @baseFontColor: #7f8c8d;
+
 @headerFontFamily: "Roboto Slab", @baseFontFamily;
 @headerFontColor: #151515;
 @headerLinkColor: @headerFontColor;
 @secondaryFontFamily: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
 @preFontFamily: "Consolas", Courier, monospace;
+
 @linkColor: #3498db;
 @linkColorHover: darken(@linkColor, 50%);
 @borderColor: #ecf0f1;
@@ -16,6 +19,7 @@
 @postmetaColor: #95a5a6;
 @gistBackgroundColor: #fdfdfd;
 
+@coverHeight: 175px;
 @maxPageWidth: 700px;
 
 // Styles
@@ -103,7 +107,7 @@ h1 {
     padding: 0;
 }
 
-#site-head, article, nav, article.preview, a.archive-link, .article-nav {
+#site-head, article, nav, .preview, .archive-link, .article-nav {
     margin: 20px auto;
     max-width: @maxPageWidth;
     width: 90%;
@@ -113,7 +117,7 @@ h1 {
         max-width: 100%
     }
 
-article.preview {
+.preview {
     margin-bottom: 4em;
     p.readmore {
       font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
@@ -156,9 +160,12 @@ article.preview {
     a {
         display: block;
         overflow: hidden;
-        text-indent: -100%;
+        white-space: nowrap;
+        text-indent: 100%;
         background-repeat: no-repeat;
         background-position: center center;
+        background-size: cover;
+        height: @coverHeight;
     }
 }
 
