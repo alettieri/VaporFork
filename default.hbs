@@ -29,7 +29,16 @@
 <body class="{{body_class}}">
 
     <header id="site-head">
-        <h1 class="blog-title{{#if @blog.cover}} blog-cover{{/if}"><a href="{{@blog.url}}"{{#if @blog.cover}} style="background-image: url({{@blog.cover}});"{{/if}}>{{@blog.title}}</a></h1>
+        {{#if @blog.cover}}
+            <h1 class="blog-title blog-cover">
+                <a href="{{@blog.url}}" style="background-image: url({{@blog.cover}});">{{@blog.title}}</a>
+            </h1>
+        {{else}}
+            <h1 class="blog-title">
+                <a href="{{@blog.url}}">{{@blog.title}}</a>
+            </h1>
+        {{/if}
+
         <h2 class="blog-description">{{@blog.description}}</h2>
     </header>
 
