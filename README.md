@@ -1,7 +1,8 @@
 # About
 
-This fork is even more minimal then it's amazing [original](https://github.com/sethlilly/Vapor). An example of it in use can be found [here](http://blog.adammenges.com).
+Forked from [original](https://github.com/sethlilly/Vapor). 
 
-![](images/desktop.png)
+Customized to meet some personal site needs.
 
-![](images/ipad.png)
+
+
